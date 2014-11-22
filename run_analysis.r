@@ -52,4 +52,4 @@ bigData_sd<-sapply(bigData,sd,na.rm=TRUE)
 # Produce clean data set
 DT <- data.table(bigData)
 tidy<-DT[,lapply(.SD,mean),by="Activity,Subject"]
-write.table(tidy,file="G:/Coursera/GetData-009/tidy.csv",sep=",",row.names = FALSE)
+write.table(tidy,file="G:/Coursera/GetData-009/TIdyMotionData.txt",sep=",",row.names = FALSE)
